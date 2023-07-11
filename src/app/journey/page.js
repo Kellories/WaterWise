@@ -7,7 +7,7 @@ const JourneyMap = () => {
     const parallax = useRef()
     const router = useRouter()
     return (
-        <Parallax ref={parallax} pages = {8} className="bg-[url('gradientLogo.png')] bg-cover bg-center">
+        <Parallax ref={parallax} pages = {9} className="bg-[url('gradientLogo.png')] bg-cover bg-center">
             <ParallaxLayer offset = {0} speed = {1} factor = {1} style={{backgroundColor:'#FFFFFF'}}>
                 <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' >
                     <div className="flex flex-row justify-center items-center w-screen">
