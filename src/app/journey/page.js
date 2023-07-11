@@ -7,7 +7,7 @@ const JourneyMap = () => {
     const parallax = useRef()
     const router = useRouter()
     return (
-        <Parallax ref={parallax} pages = {8} style = {{backgroundColor:'black'}}>
+        <Parallax ref={parallax} pages = {8} style = {{backgroundColor:'white'}}>
             <ParallaxLayer offset = {0} speed = {1} factor = {1}>
                 <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#D9D9D9"}}>
                     <div className="flex flex-row justify-center items-center w-screen">
