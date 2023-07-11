@@ -23,14 +23,14 @@ const JourneyMap = () => {
                     </div>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset={1}>
+            <ParallaxLayer offset={1} speed = {1}>
                 <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">Discovery</h1>
                 <p>One day, she noticed a flyer for WaterWise at her HDB block on the way home from grocery shopping.
 It claims to be a solution for managing household water usage and even has Incentives to be won. </p>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset = {2}>
+            <ParallaxLayer offset = {2} speed = {1}>
             <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">Exploration</h1>
                 <p>Intrigued by the information, she scans the QR code on the flyer which brings her to the App Store.
@@ -40,13 +40,13 @@ She finds out about the app’s features that help to monitor water consumption 
 It also awards vouchers to users who manage to maintain a low usage. She decides to install the app.</p>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset = {3}>
+            <ParallaxLayer offset = {3} speed = {1}>
             <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">Set Up</h1>
                 <p>Invested, Frugal Fiona sets up a Family Group and invites her family members to join. She also sets a Saving Goal and Reminders to keep the family on track.</p>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset = {4}>
+            <ParallaxLayer offset = {4} speed = {1}>
             <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">Realisation</h1>
                 <p>On several occasions, she notices that the household receives Notifications from the app, informing them that their daily water usage limit has almost been reached. This prompts them to be more mindful of how they use water that day and also compensate by using less water the next day.
@@ -54,19 +54,19 @@ It also awards vouchers to users who manage to maintain a low usage. She decides
 Additionally, a floor plan with how much water % that unit is using may urge users to manage water usage there better.</p>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset = {5}>
+            <ParallaxLayer offset = {5} speed = {1}>
             <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">Benefits</h1>
                 <p>Due to the family’s efforts, they were eligible for Rebates offered by WaterWise. They noticed a huge decrease in water bills due to the rebates and reduced water usage.</p>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset = {6}>
+            <ParallaxLayer offset = {6} speed = {1}>
             <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">Popularity</h1>
                 <p>Due to the app’s enticing benefits and usefulness, WaterWise soon gained popularity and became a well-known app in Singapore, used by all members of the household.</p>
                 </main>
             </ParallaxLayer>
-            <ParallaxLayer offset = {7}>
+            <ParallaxLayer offset = {7} speed = {1}>
             <main className='flex min-h-screen flex-col items-center font-poppins p-10 text-black' style = {{backgroundColor:"#FFFFFf"}}>
                 <h1 className="text-3xl font-bold">End</h1>
                 <p>Frugal Fiona and her neighbours effectively reduced their water bills and inculcated Good Water Saving Habits through the WaterWise app.</p>
