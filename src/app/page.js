@@ -15,7 +15,6 @@ export default function Home() {
         <p>WaterWise is an app with real-time water tracking paired with a smart water monitor. </p> <br />
         <p>WaterWise solves our issue of the lack of information by having an app where people can share tips as well as access to our own curated water saving tips.</p>
         <br />
-        <p> With a reward system that rewards users who meet their water saving goal or users who complete the challenges curated by us, we effectively give them a goal and motivator to work towards reducing the water usage</p>
       </div>
     </main>
   )
