@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col mt-10'>
           <button onClick = {()=>{router.push('/journey')}} className='bg-blue-500 rounded-lg p-3 m-2'>See Our Journey Map!</button>
-          <button className='bg-blue-500 rounded-lg p-3 m-2'> Our Persona! </button>
+          <button onClick = {()=>{router.push('/persona')}}className='bg-blue-500 rounded-lg p-3 m-2'> Our Persona! </button>
         </div>
         <div className='flex flex-col px-10 max-w-screen pt-10'>
           <h2 className=' text-2xl font-poppins font-semibold'>About Us</h2> <br />
