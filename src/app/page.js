@@ -1,5 +1,7 @@
 'use client'
 import Image from 'next/image'
+import React from 'react'
+import ReactPlayer from 'react-player'
 import { useRouter } from 'next/navigation'
 
 
@@ -14,7 +16,7 @@ export default function Home() {
         </div>
         <div className='flex flex-row flex-wrap justify-center max-w-xl'  > 
         <Image  src = '/waterwisePhone.png' width={150} height={100} alt='image of WaterWise Splash' />
-        <video autoPlay loop style = {{padding:50,width:400,height:300}}><source src ='3dmodel.mp4'/></video>
+        <ReactPlayer loop={true} playing = {true} url = "https://waterwisesip.s3.ap-southeast-1.amazonaws.com/3dmodel.mp4"></ReactPlayer>
         </div>
         <div className='flex flex-col mt-10'>
           <button onClick = {()=>{router.push('/journey')}} className='bg-blue-500 rounded-lg p-3 m-2'>See Our Journey Map!</button>
