@@ -19,7 +19,7 @@ export default function Home() {
           <q className='font-poppins text-white mb-5'> Using Water, Wiser. </q>
         </div>
         <div className='flex flex-row flex-wrap justify-center max-w-xl'  > 
-        <Image  src = '/waterwisePhone.png' width={150} height={100} alt='image of WaterWise Splash' />
+        <Image  src = '/waterwisePhone.png' className= "pr-5 " width={150} height={100} alt='image of WaterWise Splash' />
         <ReactPlayer width = {320} loop={true} playing = {true} url = "https://waterwisesip.s3.ap-southeast-1.amazonaws.com/3dmodel.mp4"></ReactPlayer>
         </div>
         <div className='flex flex-col mt-10'>
