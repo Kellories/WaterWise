@@ -12,8 +12,9 @@ export default function Home() {
           <h1 className = ' font-poppins font-medium  text-transparent text-5xl bg-clip-text bg-gradient-to-r from-blue-200 to-blue-700 mt-10 mb-2'>WaterWise</h1>
           <q className='font-poppins text-white mb-5'> Using Water, Wiser. </q>
         </div>
-        <div className='flex flex-row justify-center w-screen'  > 
+        <div className='flex flex-row flex-wrap justify-center max-w-xl'  > 
         <Image  src = '/waterwisePhone.png' width={150} height={100} alt='image of WaterWise Splash' />
+        <video autoPlay loop style = {{padding:50,width:400,height:300}}><source src ='3dmodel.mp4'/></video>
         </div>
         <div className='flex flex-col mt-10'>
           <button onClick = {()=>{router.push('/journey')}} className='bg-blue-500 rounded-lg p-3 m-2'>See Our Journey Map!</button>
