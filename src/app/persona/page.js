@@ -39,8 +39,9 @@ const Persona = () => {
         </div>
         </div>
         </section>
+
         {/* challenges */}
-        <section className="pt-10 max-w-4xl px-10">
+        <section className="pt-10 max-w-xl px-10">
         <h1 className="text-3xl font-bold ">Challenges</h1>
         <li className="p-3">Leaves tap running when doing dishes</li>
         <li className="p-3">Takes longer showers than necessary</li>
@@ -48,6 +49,12 @@ const Persona = () => {
         <li className="p-3">Often ignores minor leaks and drips</li>
         <li className="p-3">Unaware on how to save water</li>
         <li className="p-3">Difficult to convince kids to save water</li>
+        </section>
+        <section className="pt-10 max-w-xl px-10">
+        <h1 className="text-3xl font-bold">Needs</h1>
+        <li className="p-3"><q>I need motivation to help me save water.</q></li>
+        <li className="p-3"><q>I need information on how to save water.</q></li>
+        <li className="p-3"><q>I need reminders to save water.</q></li>
         </section>
         </main>
     )
