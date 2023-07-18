@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -27,6 +28,11 @@ export default function Home() {
           <p>WaterWise is real-time water tracking app paired with a smart water monitor. </p> <br />
           <p>WaterWise solves our issue of the lack of information by having an app where people can share tips as well as access to our own curated water saving tips. <br /><br />As well as letting our users find their main contributors to their household water usage, through a simple set up process and user-friendly data visualisation.</p>
           <br />
+        </div>
+        <div className='flex flex-col px-10 max-w-screen pt-10'>
+          <h2>Links:</h2><br />
+          <button className='bg-purple-600 p-3 rounded-lg'><a href = 'https://www.figma.com/proto/mt1APKFh4XSEsquWywX7Cy/WaterWise?type=design&node-id=142-1244&t=kwvdSFEQK57b4rbw-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=262%3A1718&show-proto-sidebar=1'>App Prototype</a></button>
+          <button className='bg-purple-600 mt-5 p-3 rounded-lg'><a href = 'https://docs.google.com/forms/d/e/1FAIpQLSeXE_luh1KXIgKyRz5s8bzH3LjHZ3pkzDohVYV_7OXH2tcJHg/viewform?usp=sharing'>Feedback Form</a></button>
         </div>
 
       </main>
