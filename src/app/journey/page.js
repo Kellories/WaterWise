@@ -16,7 +16,7 @@ const JourneyMap = () => {
                 </div>
                     <p className="text-2xl font-bold">Beginning</p>
                     <Image src = "/image9.png" width={800} height = {50} className='p-10' alt = "looking at bill sad"></Image>
-                    <p className="">Frugal Fiona notices that her water bills are higher than her friends. Worried about the costs, she wants to reduce it.
+                    <p className="p-0">Frugal Fiona notices that her water bills are higher than her friends. Worried about the costs, she wants to reduce it.
                         However, she does not know the section cause of the high water bills.</p>
             </section>
 
