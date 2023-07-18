@@ -1,12 +1,39 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [widthSize, setWidthSize] = useState()
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWidthSize(window.innerWidth);
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return window.innerWidth;
+}
+
 export default function Home() {
+  const width = useWindowSize()
+  console.log(width)
   const router = useRouter()
   return (
 
@@ -17,7 +44,7 @@ export default function Home() {
         </div>
         <div className='flex flex-row flex-wrap justify-center max-w-xl'  > 
         <Image  src = '/waterwisePhone.png' width={150} height={100} alt='image of WaterWise Splash' />
-        <ReactPlayer loop={true} playing = {true} url = "https://waterwisesip.s3.ap-southeast-1.amazonaws.com/3dmodel.mp4"></ReactPlayer>
+        <ReactPlayer width = {width} loop={true} playing = {true} url = "https://waterwisesip.s3.ap-southeast-1.amazonaws.com/3dmodel.mp4"></ReactPlayer>
         </div>
         <div className='flex flex-col mt-10'>
           <button onClick = {()=>{router.push('/journey')}} className='bg-blue-500 rounded-lg p-3 m-2'>See Our Journey Map!</button>
